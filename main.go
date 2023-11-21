@@ -54,16 +54,12 @@ func main() {
 	camera.Up = rl.NewVector3(0, 1, 0)
 	camera.Fovy = 45
 
-	// model := rl.LoadModel("../models/garrafa1.obj")
-	// logo := rl.LoadTexture("../models/madeira.png")
-	// model.Materials.Maps.Texture = logo
-
-	terra := rl.LoadModel("../models/bola.obj")
-	terra_text := rl.LoadTexture("../models/MAPA-DO-MUNDO.jpg")
+	terra := rl.LoadModel("models/bola.obj")
+	terra_text := rl.LoadTexture("models/MAPA-DO-MUNDO.jpg")
 	terra.Materials.Maps.Texture = terra_text
 
-	lua := rl.LoadModel("../models/bola-peq.obj")
-	lua_text := rl.LoadTexture("../models/lua.jpg")
+	lua := rl.LoadModel("models/bola-peq.obj")
+	lua_text := rl.LoadTexture("models/lua.jpg")
 	lua.Materials.Maps.Texture = lua_text
 	
 	for !rl.WindowShouldClose() {
